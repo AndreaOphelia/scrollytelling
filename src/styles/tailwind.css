@@ -15,6 +15,12 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+  p {
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 1rem; /* 16px */
+    color: white; /* Gør teksten hvid */
+    margin-bottom: 1rem; /* Tilføjer margin-bottom */
+  }
 }
 
 @layer components {
