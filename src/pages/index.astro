@@ -57,7 +57,7 @@ import { Image } from "astro:assets";
       </p>
     </div>
 
-    <img
+    <!-- <img
       src="/turtlenet.png"
       alt="Turtle Image"
       class="absolute top-10 right-10 max-w-full h-auto w-30 sm:w-40 md:w-50 lg:w-60 parallax-image -z-10"
@@ -71,7 +71,29 @@ import { Image } from "astro:assets";
       src="/eggshell.png"
       alt="eggshell"
       class="absolute top-0 left-20 max-w-full h-auto w-30 sm:w-40 md:w-50 lg:w-60 parallax-image3 -z-10"
-    />
+    /> -->
+
+    <div
+      class="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-4 w-full h-full max-w-7xl mx-auto -z-10"
+    >
+      <img
+        src="/turtlenet.png"
+        alt="Turtle Image"
+        class="col-span-1 row-span-2 max-w-full h-auto w-40 sm:w-40 md:w-50 lg:w-60 parallax-image translate-x-3 -translate-y-4"
+      />
+
+      <img
+        src="/turtle1.png"
+        alt="Turtle Image"
+        class="col-span-2 row-span-1 max-w-full h-auto w-40 sm:w-40 md:w-50 lg:w-60 parallax-image2 -translate-x-2 translate-y-6"
+      />
+
+      <img
+        src="/eggshell.png"
+        alt="Eggshell"
+        class="col-span-1 row-span-1 max-w-full h-auto w-20 sm:w-30 md:w-40 lg:w-50 parallax-image3 rotate-2 translate-x-2 -translate-y-2"
+      />
+    </div>
   </section>
 
   <section
