@@ -1,6 +1,32 @@
 ---
+import Button from "./Button.astro";
 ---
-<div>
-<p>Footer - tilføj footerindhold</p>
-</div>
-  
+
+<section class="relative h-screen" id="section1">
+  <!-- Video Background -->
+  <video
+    class="absolute top-0 left-0 w-full h-full object-cover opacity-25"
+    autoplay
+    muted
+    loop
+  >
+    <source src="../oceanbed.mp4" type="video/mp4" />
+    <!-- Alternativ tekst, hvis videoen ikke kan afspilles -->
+    Din browser understøtter ikke video.
+  </video>
+
+  <section
+    class="relative h-screen flex flex-col items-center justify-center text-white"
+    id="section2"
+  >
+    <div class="text-center">
+      <h2 class="text-5xl md:text-6xl font-bold">
+        <span style="font-family: 'Futura Cyrillic', sans-serif;">SAVE</span>
+        <span style="font-family: 'Roslindale Display', sans-serif;"
+          >The Turtles</span
+        >
+      </h2>
+      <Button>DONATE NOW</Button>
+    </div>
+  </section>
+</section>

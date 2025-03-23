@@ -20,21 +20,20 @@ import { Image } from "astro:assets";
     </video>
 
     <!-- Overlay tekst -->
-    <div
-      class="absolute top-0 left-0 w-full h-full flex items-center justify-center text-white"
+    <article
+      class="relative h-screen flex flex-col items-center justify-center text-white"
+      id="section"
     >
-      <h1 class="text-6xl md:text-7xl font-bold">
-        <span style="font-family: 'Futura Cyrillic', sans-serif;">SAVE</span>
-        <span style="font-family: 'Roslindale Display', sans-serif;"
-          >The Turtles</span
-        >
-      </h1>
-    </div>
-    <!-- <img
-      src="/turtlenet.png"
-      alt="Turtle Image 2"
-      class="absolute top-10 right-90 max-w-full h-auto w-30 sm:w-40 md:w-50 lg:w-60 z-10"
-    /> -->
+      <div class="text-center">
+        <h2 class="text-5xl md:text-6xl font-bold">
+          <span style="font-family: 'Futura Cyrillic', sans-serif;">SAVE</span>
+          <span style="font-family: 'Roslindale Display', sans-serif;"
+            >The Turtles</span
+          >
+        </h2>
+        <Button>DONATE NOW</Button>
+      </div>
+    </article>
   </section>
 
   <section
@@ -174,31 +173,37 @@ import { Image } from "astro:assets";
             alt="Lille figur 3"
             class="absolute bottom-30 left-1/3 w-20 animate-pulse"
           />
+          <img
+            src="/cigarette.png"
+            alt="Lille figur 3"
+            class="absolute bottom-24 left-34 w-14 animate-pulse"
+          />
+          <img
+            src="/hook.png"
+            alt="Lille figur 3"
+            class="absolute bottom-20 left-1/3 w-10 animate-pulse"
+          />
         </div>
-        <div class="">
-          <div class="flex items-center">
+        <div class="grid grid-rows-5 gap-4">
+          <div class="flex items-center gap-4 justify-center">
             <img src="./stick.png" alt="" />
-            <p>noget</p>
+            <p>BALOON FRAGMENTS</p>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center gap-4 justify-center">
             <img src="./stick.png" alt="" />
-            <p>noget</p>
+            <p>CLOTHING</p>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center gap-4 justify-center">
             <img src="./stick.png" alt="" />
-            <p>noget</p>
+            <p>TIRE FRAGMENTS</p>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center gap-4 justify-center">
             <img src="./stick.png" alt="" />
-            <p>noget</p>
+            <p>CIGARETTES</p>
           </div>
-          <div class="flex items-center">
+          <div class="flex items-center gap-4 justify-center">
             <img src="./stick.png" alt="" />
-            <p>noget</p>
-          </div>
-          <div class="flex items-center">
-            <img src="./stick.png" alt="" />
-            <p>noget</p>
+            <p>FISHING GEAR</p>
           </div>
         </div>
       </div>
@@ -214,24 +219,6 @@ import { Image } from "astro:assets";
     </div>
   </section>
 </MainLayout>
-
-<article>
-  <h1 class="font-roslindale text-5xl">Index overskrift</h1>
-  <Button>Klik!</Button>
-  <p>
-    Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link
-    >
-  </p>
-  <p style="font-family: 'Myriad Pro', sans-serif;">
-    Dette er skrevet med Myriad Pro!
-  </p>
-  <p style="font-family: 'Roslindale Display', sans-serif;">
-    Dette er skrevet med Roslindale Display!
-  </p>
-  <p style="font-family: 'Futura Cyrillic', sans-serif;">
-    Dette er skrevet med Futura Cyrillic!
-  </p>
-</article>
 
 <script>
   /* Import af Motion One bibliotek */
