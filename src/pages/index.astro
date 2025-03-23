@@ -206,28 +206,44 @@ import { Image } from "astro:assets";
             class="absolute bottom-20 left-1/3 w-10 animate-pulse"
           />
         </div>
-        <div class="grid grid-rows-5 gap-4">
-          <div class="flex items-center gap-4 justify-center">
-            <img src="./stick.png" alt="" />
-            <p>BALOON FRAGMENTS</p>
-          </div>
-          <div class="flex items-center gap-4 justify-center">
-            <img src="./stick.png" alt="" />
-            <p>CLOTHING</p>
-          </div>
-          <div class="flex items-center gap-4 justify-center">
-            <img src="./stick.png" alt="" />
-            <p>TIRE FRAGMENTS</p>
-          </div>
-          <div class="flex items-center gap-4 justify-center">
-            <img src="./stick.png" alt="" />
-            <p>CIGARETTES</p>
-          </div>
-          <div class="flex items-center gap-4 justify-center">
-            <img src="./stick.png" alt="" />
-            <p>FISHING GEAR</p>
-          </div>
-        </div>
+        <div class="flex flex-col space-y-6 text-white">
+				  <div class="flex items-center space-x-4 overflow-hidden group-item">
+					<img src="./stick.png" class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left" />
+					<span class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium">
+					  Balloon fragments
+					</span>
+				  </div>
+			  
+				  <div class="flex items-center space-x-4 overflow-hidden group-item">
+					<img src="./stick.png" class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left" />
+					<span class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium">
+					  Clothing
+					</span>
+				  </div>
+			  
+				  <div class="flex items-center space-x-4 overflow-hidden group-item">
+					<img src="./stick.png" class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left" />
+					<span class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium">
+					  Tire fragments
+					</span>
+				  </div>
+            
+
+          <div class="flex items-center space-x-4 overflow-hidden group-item">
+            <img src="./stick.png" class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left" />
+            <span class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium">
+              Cigarettes
+            </span>
+            </div>
+
+
+            <div class="flex items-center space-x-4 overflow-hidden group-item">
+              <img src="./stick.png" class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left" />
+              <span class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium">
+                Fishing gear
+              </span>
+              </div>
+				</div>
       </div>
       <p
         class="text-white mt-10"
@@ -277,6 +293,36 @@ import { Image } from "astro:assets";
     };
   });
 
+
+   // Stagger animation på stick og ord
+
+ const items = document.querySelectorAll(".group-item");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      const stroke = entry.target.querySelector(".animated-stroke");
+      const word = entry.target.querySelector(".animated-word");
+
+      const delay = index * 400;
+
+      stroke.style.transitionDelay = `${delay}ms`;
+      word.style.transitionDelay = `${delay + 400}ms`; // lidt senere end stregen
+
+      stroke.classList.remove("scale-x-0");
+      stroke.classList.add("scale-x-100");
+
+      word.classList.remove("opacity-0");
+      word.classList.add("opacity-100");
+
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+items.forEach((item) => observer.observe(item));
+
+
   //parallax effekt på skilpadder
   window.addEventListener("scroll", function () {
     const image = document.querySelector(".parallax-image");
@@ -293,4 +339,7 @@ import { Image } from "astro:assets";
     const scrollPosition = window.scrollY;
     image.style.transform = `translateY(${scrollPosition * 0.3}px)`; // Juster bevægelsen
   });
+
+
+
 </script>
