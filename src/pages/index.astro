@@ -74,24 +74,24 @@ import { Image } from "astro:assets";
     /> -->
 
     <div
-      class="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-4 w-full h-full max-w-7xl mx-auto -z-10"
+      class="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-4 w-full h-full max-w-7xl mx-auto z-10"
     >
       <img
         src="/turtlenet.png"
         alt="Turtle Image"
-        class="col-span-1 row-span-2 max-w-full h-auto w-40 sm:w-40 md:w-50 lg:w-60 parallax-image translate-x-3 -translate-y-4"
+        class="col-span-1 row-span-2 max-w-full h-auto w-40 sm:w-40 md:w-50 lg:w-60 parallax-image4 translate-x-3 -translate-y-4"
       />
 
       <img
         src="/turtle1.png"
         alt="Turtle Image"
-        class="col-span-2 row-span-1 max-w-full h-auto w-40 sm:w-40 md:w-50 lg:w-60 parallax-image2 -translate-x-2 translate-y-6"
+        class="col-span-2 row-span-1 max-w-full h-auto w-40 sm:w-40 md:w-50 lg:w-60 parallax-image5 -translate-x-2 translate-y-6"
       />
 
       <img
         src="/eggshell.png"
         alt="Eggshell"
-        class="col-span-1 row-span-1 max-w-full h-auto w-20 sm:w-30 md:w-40 lg:w-50 parallax-image3 rotate-2 translate-x-2 -translate-y-2"
+        class="col-span-1 row-span-1 max-w-full h-auto w-20 sm:w-30 md:w-40 lg:w-50 parallax-image6 rotate-2 translate-x-2 -translate-y-2"
       />
     </div>
   </section>
@@ -207,43 +207,66 @@ import { Image } from "astro:assets";
           />
         </div>
         <div class="flex flex-col space-y-6 text-white">
-				  <div class="flex items-center space-x-4 overflow-hidden group-item">
-					<img src="./stick.png" class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left" />
-					<span class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium">
-					  Balloon fragments
-					</span>
-				  </div>
-			  
-				  <div class="flex items-center space-x-4 overflow-hidden group-item">
-					<img src="./stick.png" class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left" />
-					<span class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium">
-					  Clothing
-					</span>
-				  </div>
-			  
-				  <div class="flex items-center space-x-4 overflow-hidden group-item">
-					<img src="./stick.png" class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left" />
-					<span class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium">
-					  Tire fragments
-					</span>
-				  </div>
-            
+          <div class="flex items-center space-x-4 overflow-hidden group-item">
+            <img
+              src="./stick.png"
+              class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left"
+            />
+            <span
+              class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium"
+            >
+              Balloon fragments
+            </span>
+          </div>
 
           <div class="flex items-center space-x-4 overflow-hidden group-item">
-            <img src="./stick.png" class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left" />
-            <span class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium">
+            <img
+              src="./stick.png"
+              class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left"
+            />
+            <span
+              class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium"
+            >
+              Clothing
+            </span>
+          </div>
+
+          <div class="flex items-center space-x-4 overflow-hidden group-item">
+            <img
+              src="./stick.png"
+              class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left"
+            />
+            <span
+              class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium"
+            >
+              Tire fragments
+            </span>
+          </div>
+
+          <div class="flex items-center space-x-4 overflow-hidden group-item">
+            <img
+              src="./stick.png"
+              class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left"
+            />
+            <span
+              class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium"
+            >
               Cigarettes
             </span>
-            </div>
+          </div>
 
-
-            <div class="flex items-center space-x-4 overflow-hidden group-item">
-              <img src="./stick.png" class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left" />
-              <span class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium">
-                Fishing gear
-              </span>
-              </div>
-				</div>
+          <div class="flex items-center space-x-4 overflow-hidden group-item">
+            <img
+              src="./stick.png"
+              class="animated-stroke w-24 h-1 scale-x-0 transition-transform duration-1000 origin-left"
+            />
+            <span
+              class="animated-word opacity-0 transition-opacity duration-1000 text-lg font-medium"
+            >
+              Fishing gear
+            </span>
+          </div>
+        </div>
       </div>
       <p
         class="text-white mt-10"
@@ -255,6 +278,166 @@ import { Image } from "astro:assets";
         turtles face a deadly fate.
       </p>
     </div>
+  </section>
+  <section
+    class="relative h-screen flex flex-col items-center justify-center text-white"
+    id="section6"
+  >
+    <div class="text-center">
+      <h2 class="text-5xl md:text-6xl font-bold">
+        <span style="font-family: 'Futura Cyrillic', sans-serif;">TRAPPED&</span
+        >
+        <span style="font-family: 'Roslindale Display', sans-serif;"
+          >Drowned</span
+        >
+      </h2>
+      <p
+        class="mt-4 max-w-[65ch] text-center"
+        style="font-family: 'Myriad Pro', sans-serif; line-height: 1.5;"
+      >
+        Each year, thousands of sea turtles drown after getting trapped in
+        fishing nets and hooks, unable to reach the surface for air.
+      </p>
+    </div>
+
+    <!-- <img
+    src="/turtlenet.png"
+    alt="Turtle Image"
+    class="absolute top-10 right-10 max-w-full h-auto w-30 sm:w-40 md:w-50 lg:w-60 parallax-image -z-10"
+  />
+  <img
+    src="/turtle1.png"
+    alt="Turtle Image"
+    class="absolute top-30 left-10 max-w-full h-auto w-30 sm:w-40 md:w-50 lg:w-60 parallax-image2 -z-10"
+  />
+  <img
+    src="/eggshell.png"
+    alt="eggshell"
+    class="absolute top-0 left-20 max-w-full h-auto w-30 sm:w-40 md:w-50 lg:w-60 parallax-image3 -z-10"
+  /> -->
+
+    <div
+      class="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-4 w-full h-full max-w-7xl mx-auto -z-10"
+    >
+      <img
+        src="/turtlenet.png"
+        alt="Turtle Image"
+        class="col-span-1 row-span-2 max-w-full h-auto w-40 sm:w-40 md:w-50 lg:w-60 parallax-image translate-x-3 -translate-y-4"
+      />
+
+      <img
+        src="/turtle1.png"
+        alt="Turtle Image"
+        class="col-span-2 row-span-1 max-w-full h-auto w-40 sm:w-40 md:w-50 lg:w-60 parallax-image2 -translate-x-2 translate-y-6"
+      />
+
+      <img
+        src="/eggshell.png"
+        alt="Eggshell"
+        class="col-span-1 row-span-1 max-w-full h-auto w-20 sm:w-30 md:w-40 lg:w-50 parallax-image3 rotate-2 translate-x-2 -translate-y-2"
+      />
+    </div>
+  </section>
+  <section
+    class="h-screen flex items-center justify-center overflow-hidden m-10"
+    id="section7"
+  >
+    <!-- <div
+      class="container border-2 border-white p-5 max-w-2xl w-full rounded-xl"
+    > -->
+    <ul
+      class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+    >
+      <li>
+        <div class="timeline-middle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-5 w-5"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="timeline-start mb-10 md:text-end text-white">
+          <time class="text-white text-lg font-bold"
+            >LIFESPAN OF A FISHINGNET</time
+          >
+          <div class="text-white text-lg">0-1 Years</div>
+          Net is lost or discarded, starts entangling marine life.
+        </div>
+        <hr />
+      </li>
+      <li>
+        <hr />
+        <div class="timeline-middle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-5 w-5"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="timeline-end md:mb-10 text-white">
+          <time class=""></time>
+          <div class="text-lg">5-10 years</div>
+          Breaks into large fragments, still trapping animals.
+        </div>
+        <hr />
+      </li>
+      <li>
+        <hr />
+        <div class="timeline-middle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-5 w-5"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="timeline-start mb-10 md:text-end text-white">
+          <time class=""></time>
+          <div class="text-lg">50-100 years</div>
+          Ghost net remains intact, slowly breaking into microplastics.
+        </div>
+        <hr />
+      </li>
+      <li>
+        <hr />
+        <div class="timeline-middle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="h-5 w-5"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <div class="timeline-end md:mb-10 text-white">
+          <time class=""></time>
+          <div class="text-lg">600+ Years</div>
+          Fully degraded into invisible microplastics, still harming ecosystems.
+        </div>
+        <hr />
+      </li>
+    </ul>
   </section>
 </MainLayout>
 
@@ -293,35 +476,36 @@ import { Image } from "astro:assets";
     };
   });
 
+  // Stagger animation på stick og ord
 
-   // Stagger animation på stick og ord
+  const items = document.querySelectorAll(".group-item");
 
- const items = document.querySelectorAll(".group-item");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          const stroke = entry.target.querySelector(".animated-stroke");
+          const word = entry.target.querySelector(".animated-word");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, index) => {
-    if (entry.isIntersecting) {
-      const stroke = entry.target.querySelector(".animated-stroke");
-      const word = entry.target.querySelector(".animated-word");
+          const delay = index * 400;
 
-      const delay = index * 400;
+          stroke.style.transitionDelay = `${delay}ms`;
+          word.style.transitionDelay = `${delay + 400}ms`; // lidt senere end stregen
 
-      stroke.style.transitionDelay = `${delay}ms`;
-      word.style.transitionDelay = `${delay + 400}ms`; // lidt senere end stregen
+          stroke.classList.remove("scale-x-0");
+          stroke.classList.add("scale-x-100");
 
-      stroke.classList.remove("scale-x-0");
-      stroke.classList.add("scale-x-100");
+          word.classList.remove("opacity-0");
+          word.classList.add("opacity-100");
 
-      word.classList.remove("opacity-0");
-      word.classList.add("opacity-100");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
 
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.3 });
-
-items.forEach((item) => observer.observe(item));
-
+  items.forEach((item) => observer.observe(item));
 
   //parallax effekt på skilpadder
   window.addEventListener("scroll", function () {
@@ -339,7 +523,4 @@ items.forEach((item) => observer.observe(item));
     const scrollPosition = window.scrollY;
     image.style.transform = `translateY(${scrollPosition * 0.3}px)`; // Juster bevægelsen
   });
-
-
-
 </script>
