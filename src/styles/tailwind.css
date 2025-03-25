@@ -24,6 +24,12 @@
   }
 }
 
+h1,
+h2,
+h3 {
+  color: white;
+}
+
 @layer components {
 }
 @layer utilities {
