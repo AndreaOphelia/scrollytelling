@@ -439,6 +439,33 @@ import { Image } from "astro:assets";
       </li>
     </ul>
   </section>
+  <section class="h-screen flex items-center justify-center overflow-hidden m-10"
+  id="section8">
+    <div class="max-w-xl mx-auto p-6 rounded-2xl mb-30">
+      <h2 class="text-7xl font-semibold mb-4 text-center"> <span style="font-family: 'Roslindale Display', sans-serif;">Help us make a</span> 
+      <span style="font-family: 'Futura Cyrillic', sans-serif;" class="uppercase">Change</span></h2>
+      <form class="space-y-4">
+        <!-- Navn -->
+        <div>
+        <label for="navn" class="block text-sm font-medium text-white">Name</label>
+        <input type="text" id="navn" name="navn" placeholder="Jens Jensen"
+          class="mt-1 block w-full p-2 border border-[#8BCAFA] rounded-lg shadow-sm bg-[#6794B1]" />
+          <label for="telefon" class="block text-sm font-medium text-white mt-3">Phonenumber</label>
+        <input type="tel" id="telefon" name="telefon" placeholder="+45"
+          class="mt-1 block w-full p-2 border border-[#8BCAFA] rounded-lg shadow-sm bg-[#6794B1]" />
+          <label for="besked" class="block text-sm font-medium text-white mt-5"></label>
+        <textarea id="besked" name="besked" rows="4" placeholder="Message"
+          class="mt-1 block w-full p-2 border border-[#8BCAFA] rounded-lg shadow-sm bg-[#6794B1]"></textarea>
+        </div>
+        <div>
+        <button type="submit"
+          class="w-full bg-[#6794B1] border-[#8BCAFA] text-white py-2 px-4 rounded-xl mt-2">
+          Send
+        </button>
+        </div>
+      </form>
+      </div>
+  </section>
 </MainLayout>
 
 <script>
