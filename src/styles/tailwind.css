@@ -21,6 +21,7 @@
     font-size: 20px; /* 16px */
     color: white; /* Gør teksten hvid */
     margin-bottom: 1rem; /* Tilføjer margin-bottom */
+    max-width: 65ch;
   }
 }
 
