@@ -1,16 +1,22 @@
 ---
-
+const options = [
+  { amount: "125 kr", selected: false },
+  { amount: "450 kr", selected: true },
+  { amount: "1000 kr", selected: false },
+  { label: "Choose amount", selected: false },
+];
+import Button from "./Button.astro";
 ---
 
-<div
+<!-- <div
   style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; "
 >
-  <!-- Logo Section -->
+
   <div>
     <img src="/logo.png" alt="Logo" style="height: 40px;" />
   </div>
 
-  <!-- Navigation Section -->
+ 
   <nav>
     <ul
       class="text-white"
@@ -24,4 +30,28 @@
       </li>
     </ul>
   </nav>
+</div> -->
+<div class="flex justify-between items-center p-3 text-white rounded-lg">
+  <img src="/logo.png" alt="Logo" class="h-10" />
+
+  <div class="flex items-center gap-3">
+    <div class="flex border border-white rounded-lg overflow-hidden">
+      {
+        options.map((option) => (
+          <div
+            class={`px-4 py-2 cursor-pointer transition ${
+              option.selected ? "bg-white text-cyan-800" : "hover:bg-white/20"
+            }`}
+          >
+            {option.amount || option.label}
+          </div>
+        ))
+      }
+    </div>
+    <button
+      class="hover:bg-white hover:text-cyan-800 text-white py-2 px-4 rounded-lg border border-white"
+    >
+      Donate
+    </button>
+  </div>
 </div>
